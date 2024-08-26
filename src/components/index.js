@@ -1,9 +1,9 @@
 import Navigation from './Navigation/Navigation';
-import ContentBlock from './ContentBlock/ContentBlock';
-import ImageBlock from './ImageBlock/ImageBlock';
+import ImagesLayout from './ImagesLayout/ImagesLayout';
+import ParagraphList from './ParagraphList/ParagraphList';
 
 export {
   Navigation,
-  ContentBlock,
-  ImageBlock
+  ImagesLayout,
+  ParagraphList
 };

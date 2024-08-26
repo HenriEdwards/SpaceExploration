@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './ImageBlock.css';
+import './imageslayout.css';
 
-export default function ImageBlock({ images }) {
+export default function ImagesLayout({ images }) {
   // State to track which image is being hovered over
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -18,17 +18,19 @@ export default function ImageBlock({ images }) {
   };
 
   return (
-    <div className='images-container'>
+    <div className='image-container'>
+
       {images.map((item, index) => (
         <div
-          className={`image-block ${hoveredIndex === index ? 'hovered' : hoveredIndex !== null ? 'shrink' : ''}`}
+          className={`image-container-inner ${hoveredIndex === index ? 'hovered' : hoveredIndex !== null ? 'shrink' : ''}`}
           key={index}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
         >
-          <img className='side-image' src={item.src} alt={item.alt} />
+          <img className='image' src={item.src} alt={item.alt} />
         </div>
       ))}
+
     </div>
   );
 }

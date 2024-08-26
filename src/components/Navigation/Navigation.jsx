@@ -15,3 +15,23 @@ export default function Navigation() {
     </div>
   )
 }
+
+// import { Outlet, Link } from "react-router-dom";
+// <li>
+//   <Link to="/Home">Home</Link>
+// </li>
+// <li>
+//   <Link to="/News">News</Link>
+// </li>
+// <li>
+//   <Link to="/ISS">ISS</Link>
+// </li>
+// <li>
+//   <Link to="/Voyager">Voyager</Link>
+// </li>
+// <li>
+//   <Link to="/Starship">Starship</Link>
+// </li>
+// <li>
+//   <Link to="/Starlink">Starlink</Link>
+// </li>
