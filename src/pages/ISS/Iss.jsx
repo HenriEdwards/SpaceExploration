@@ -19,8 +19,8 @@ function Iss() {
   const credit = ["NASA"]
 
   const paragraphs = [
-    "The International Space Station (ISS) is a space-based laboratory that orbits Earth, enabling research in a microgravity environment. It is a collaborative effort between NASA, Roscosmos, ESA, JAXA, and CSA, and has been continuously inhabited since 2000, supporting experiments that advance our understanding of space and Earth.",
-    "The future of the ISS involves extending its mission until at least 2030, with plans to transition its functions to commercial space stations. This shift will allow NASA and other agencies to focus on deeper space exploration, like missions to Mars, while private companies take over low Earth orbit operations."
+    "The International Space Station (ISS) is a space-based laboratory that orbits Earth, enabling research in a microgravity environment, and has been continuously inhabited since 2000, supporting experiments that advance our understanding of space and Earth.",
+    "The future of the ISS involves extending its mission until at least 2030, with plans to transition its functions to commercial space stations. This shift will allow NASA and other agencies to focus on deeper space exploration."
   ];
 
   const listItems = [
