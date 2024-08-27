@@ -10,7 +10,7 @@ export default function ImgLayout({ images , page }) {
     if (page == "voyager") {
       return images.length -1;
     } else {
-      return Math.floor(images.length / 2)
+      return 0;
     }
   }
   const [hoveredIndex, setHoveredIndex] = useState(changeDefaultImgIndex(page));
