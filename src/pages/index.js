@@ -1,13 +1,15 @@
-import HeroSection from './HeroSection/HeroSection';
+import Landing from './Landing/Landing';
 import ISS from './ISS/Iss';
 import Voyager from './Voyager/Voyager';
 import Starship from './Starship/Starship';
 import Starlink from './Starlink/Starlink';
+import News from './News/News';
 
 export {
-  HeroSection,
+  Landing,
   ISS,
   Voyager,
   Starship,
-  Starlink
+  Starlink,
+  News
 };

@@ -1,12 +1,21 @@
 import './starship.css'
-import { Navigation } from '../../components/index';
+import {ImgLayout, ParList } from '../../components/index';
+import { images, paragraphs, listItems } from './starshipData.js';
 
 function Starship() {
+
   return (
-    <div className='starship-section' id='starship'>
-       <Navigation />
-    </div>
+    <section className='starship'>
+      <ParList 
+        heading="Starship Overview" 
+        paragraphs={paragraphs} 
+        listItems={listItems} 
+      />
+        <ImgLayout 
+        images={images}
+      />
+    </section>
   )
 }
 
-export default Starship
+export default Starship;

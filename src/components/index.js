@@ -1,9 +1,9 @@
-import Navigation from './Navigation/Navigation';
-import ImagesLayout from './ImagesLayout/ImagesLayout';
-import ParagraphList from './ParagraphList/ParagraphList';
+import Navbar from './Navbar/Navbar';
+import ImgLayout from './ImgLayout/ImgLayout';
+import ParList from './ParList/ParList';
 
 export {
-  Navigation,
-  ImagesLayout,
-  ParagraphList
+  Navbar,
+  ImgLayout,
+  ParList
 };

@@ -1,21 +1,13 @@
-.starship-section {
-  height: 100vh;
-  position: relative;
-  background: url('../../assets/bg2.jpg');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  width: 100%;
-  z-index: 1;
+.starship {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  gap: 4rem;
 }
 
-.starship-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); 
-  z-index: -1; 
+/* RESPONSIVE */
+@media only screen and (max-width: 900px) {
+  .starship {
+    flex-wrap: wrap;
+  }
 }

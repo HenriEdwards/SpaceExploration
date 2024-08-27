@@ -1,12 +1,22 @@
 import './voyager.css'
-import { Navigation } from '../../components/index';
+import { images, paragraphs, listItems } from './voyagerData';
+import { ImgLayout, ParList } from '../../components/index';
 
 function Voyager() {
+                      
   return (
-    <div className='voyager-section' id='voyager'>
-      <Navigation />
-    </div>
+    <section className='voyager'>
+      <ParList 
+        heading="Voyager Overview" 
+        paragraphs={paragraphs} 
+        listItems={listItems} 
+      />
+        <ImgLayout 
+        images={images}
+        page={"voyager"}
+      />
+    </section>
   )
 }
 
-export default Voyager
+export default Voyager;

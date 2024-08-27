@@ -1,12 +1,21 @@
 import './starlink.css'
-import { Navigation } from '../../components/index';
+import {ImgLayout, ParList } from '../../components/index';
+import { images, paragraphs, listItems } from './starlinkData.js';
 
 function Starlink() {
+
   return (
-    <div className='starlink-section' id='starlink'>
-      <Navigation />
-    </div>
+    <section className='starlink'>
+      <ParList 
+        heading="Starlink Overview" 
+        paragraphs={paragraphs} 
+        listItems={listItems} 
+      />
+        <ImgLayout 
+        images={images}
+      />
+    </section>
   )
 }
 
-export default Starlink
+export default Starlink;

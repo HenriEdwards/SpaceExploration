@@ -1,6 +1,6 @@
-import './paragraphlist.css'
+import './parlist.css'
 
-export default function ParagraphList({paragraphs, heading, listItems}) {
+export default function ParList({paragraphs, heading, listItems}) {
 
   return (
     <div className='paragraph-container'>

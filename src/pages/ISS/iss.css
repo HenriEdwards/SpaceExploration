@@ -1,29 +1,13 @@
 .iss {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-}
-
-.iss-container {
-  display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
   height: 100%;
-  padding: 4rem;
   gap: 4rem;
 }
 
-
 /* RESPONSIVE */
 @media only screen and (max-width: 900px) {
-  .iss-container {
-    display: flex;
-    flex-direction: row;
+  .iss {
     flex-wrap: wrap;
-    padding: 2rem;
-    gap: 2rem;
   }
-
-  
 }
