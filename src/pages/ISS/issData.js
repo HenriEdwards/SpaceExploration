@@ -1,5 +1,5 @@
 const images = [
-  { src: 'src/assets/iss/iss1.jpg', 
+  { src: 'SpaceLog/src/assets/iss/iss1.jpg', 
     alt: 'Internationa-Space-Station', 
     credit: 'https://en.m.wikipedia.org/wiki/File:Unity-Zarya-Zvezda_STS-106.jpg', 
     desc: 'The International Space Station as seen from the departing Space Shuttle Atlantis on STS-106.'}, 
