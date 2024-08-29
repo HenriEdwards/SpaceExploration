@@ -3,10 +3,6 @@ const images = [
     alt: 'spacex-starship', 
     credit: 'https://x.com/SpaceXPhotos/media', 
     desc: "Starship's Third Flight Test"},
-  { src: 'src/assets/starship/s0.jpg', 
-    alt: 'spacex-starship', 
-    credit: 'https://x.com/SpaceXPhotos/media', 
-    desc: "Starship's Third Flight Test"},
   { src: 'src/assets/starship/s1.jpg', 
     alt: 'spacex-starship', 
     credit: 'https://x.com/SpaceXPhotos/media', 
@@ -35,10 +31,7 @@ const images = [
     alt: 'spacex-starship', 
     credit: 'https://x.com/SpaceXPhotos/media', 
     desc: "Starship Test Flight Mission"},
-  { src: 'src/assets/starship/s8.jpg', 
-    alt: 'spacex-starship', 
-    credit: 'https://x.com/SpaceXPhotos/media', 
-    desc: "Starship Test Flight Mission"},
+
   ]
                         
   const paragraphs = [

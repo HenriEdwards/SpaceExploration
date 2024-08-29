@@ -1,77 +1,76 @@
-.paragraph-container {
+.parlist-layout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
 }
 
-.paragraph-list {
+.parlist-container {
   border-bottom: 1px solid white;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.paragraph-list__heading {
+.parlist-par-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.parlist-par-heading {
   padding: 2rem 0;
   border-top: 1px solid white;
   line-height: 1;
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 35px;
   text-transform: uppercase;
   transition: 1s ease;
 }
-.paragraph-list__heading:hover {
-  border-top: 1px solid white;
-}
 
-.paragraph-list__paragraphs {
-  display: flex;
-  gap: 2rem;
-  font-size: 16px;
+.parlist-par {
+  font-size: 17px;
   line-height: 1.3;
   text-justify: auto;
-}
-.paragraph-list__paragraph {
-
+  color: white;
 }
 
-.paragraph-list__list {
+
+.parlist-list {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   flex-wrap: wrap;
   list-style: none;
-
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.3;
   padding-bottom: 2rem;
+  color: rgb(170, 170, 170);
 }
 
-.paragraph-list__list-item {
+.parlist-list-item {
   flex-basis: 50%;
-  max-width: 50%;
-  flex-grow: 0;
-}
-
-.paragraph-list__list-item {
   flex-grow: 1; 
-  max-width: calc(50% - 1rem); /* Account for parent gap */
+  max-width: calc(50% - 1rem);
 }
 
 
 /* RESPONSIVE */
-@media only screen and (max-width: 900px) {
-  .paragraph-container {
+@media only screen and (max-width: 485px) {
+  .parlist-par-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;    
   }
-  
-  .paragraph-list,
-  .paragraph-list__list {
-    gap: 1rem;
-  }
-}
 
+  .parlist-par-heading {
+    padding: 2rem 0 0 0;
+    font-size: 30px;
+  }
+
+  .parlist-par {
+    font-size: 16px;
+  }
+  .parlist-list {
+    font-size: 15px;
+  }
+
+}

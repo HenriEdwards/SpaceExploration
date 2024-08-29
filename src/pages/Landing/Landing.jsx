@@ -1,11 +1,22 @@
-import './landing.css'
+import "./landing.css"
+import spaceman from "../../assets/spaceman.jpg";
 
-export default function Landing() {
+
+function Landing() {
+
   return (
-    <div className='hero-section'>
-      <div className="hero-content-section">
-        <h1>I love Space, Technology and Human Ingenuity.</h1>
+    <section className="landing">
+      <img src={ spaceman } alt="" />
+      <div className="landing-container">
+        <h1> A dive into <br />
+          <span className="special-text">
+           space exploration <br /
+           >cutting edge technology<br /> 
+           initiatives shaping our future</span>
+        </h1>
       </div>
-    </div>
+    </section>
   )
 }
+
+export default Landing;

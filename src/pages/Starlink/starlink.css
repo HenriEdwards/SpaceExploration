@@ -10,5 +10,8 @@
 @media only screen and (max-width: 900px) {
   .starlink {
     flex-wrap: wrap;
+    padding-top: 6rem;
+    gap: 0;
   }
 }
+

@@ -1,20 +1,13 @@
-
-
-@font-face {
-  font-family: SpaceX;
-  src: url(../../../public/fonts/SpaceX.ttf);
-}
-
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  overflow: none;
-
+  position: fixed;
   z-index: 999;
   background: #00000050;
   height: 50px;
+  margin-top: 0.5rem;
 }
 
 .navbar-container {
@@ -28,7 +21,7 @@
 
 .navbar-container li a {
   position: relative;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
@@ -36,10 +29,11 @@
   color: white;
 }
 
-.navbar-container li a::before {
+.navbar-container li a::before,
+.navbar-container li a:hover::before {
   content: "";
   position: absolute;
-  background: #fff;
+  background: white;
   top: -5px;
   left: 0;
   width: 0%;
@@ -47,18 +41,78 @@
   transition: all 1.2s ease-in;
 }
 
-
-.navbar-container li.current {
-  background: red;
+.navbar-container li a:hover::before {
+  width: 100%;
+  transition: all 0.3s ease;
 }
 
-.navbar-container li a:hover::before{
-  content: "";
+/* Mobile menu */
+.material-symbols-outlined.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 0.5rem;
+}
+
+.navbar-m-container {
+  display: none;
+  flex-direction: column;
   position: absolute;
-  background: #fff;
-  top: -5px;
-  left: 0;
+  top: 50px;
+  right: 0;
+  background: #000;
   width: 100%;
-  height: 2px;
-  transition: all 0.3s ease;
+  text-align: center;
+  transition: max-height 0.3s ease;
+  background: #000;
+  list-style-type:none;
+}
+
+.navbar-m-container.open {
+  display: none;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.navbar-m-container li a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 485px) {
+  .navbar-container {
+    display: none;
+  }
+
+  .material-symbols-outlined.menu-icon {
+    display: block;
+  }
+
+  .navbar-m-container.open {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+
+  /* Line deco on mobile nav */
+  .navbar-m-container.open::before,
+  .navbar-m-container.open::after {
+    position: absolute;
+    content: "";
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+  }
+  .navbar-m-container.open::before {
+    top: 1rem;
+  }
+
+  .navbar {
+    background: black;
+    margin-top: 0;
+  }
 }

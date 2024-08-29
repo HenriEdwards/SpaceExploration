@@ -1,11 +1,11 @@
-import './voyager.css'
-import { images, paragraphs, listItems } from './voyagerData';
-import { ImgLayout, ParList } from '../../components/index';
+import "./voyager.css"
+import { images, paragraphs, listItems } from "./voyagerData";
+import { ImgLayout, ParList } from "../../components/index";
 
 function Voyager() {
                       
   return (
-    <section className='voyager'>
+    <section className="voyager">
       <ParList 
         heading="Voyager Overview" 
         paragraphs={paragraphs} 
@@ -13,7 +13,7 @@ function Voyager() {
       />
         <ImgLayout 
         images={images}
-        page={"voyager"}
+        page={"alternate"}
       />
     </section>
   )

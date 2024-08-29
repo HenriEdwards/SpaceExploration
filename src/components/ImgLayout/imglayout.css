@@ -1,64 +1,51 @@
 .img-layout {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image-container {
+.imgs-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image-container-inner {
+.img-container {
   flex: 1;
   display: flex;
   position: relative;
   border: 1px solid white;
   transition: .3s ease;
-  box-shadow: 0 0 2.5rem 3rem black;
+  box-shadow: 0 0 2rem 2rem black;
 }
 
-/* Transparency overlay */
-.image-container-inner::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: rgba(255, 0, 0, 0.385);
-  opacity: 0;
-}
-
-.image-container-inner .image {
+.img-container .img {
   width: 100%;
   object-fit: cover;
 }
 
-.image-container-inner.hovered {
+.img-container.hovered {
   flex: 12;
-  /* z-index: 2; */
 }
 
 /* Opacity of shrinked images */
-.image-container-inner.shrink::after {
+.img-container.shrink::after {
   opacity: 1;
 }
 
 /* Opacity when no images are hovered */
-.image-container-inner:not(.hovered):not(.shrink)::after {
+.img-container:not(.hovered):not(.shrink)::after {
   opacity: 1;
 }
 
-.credit-text {
+/* Credit box */
+.credit-container {
   display: flex;
   gap: 1rem;
   flex-direction: column;
-
   position: absolute;
   bottom: 4px;
   left: 4px;
@@ -68,79 +55,73 @@
   background: rgb(0, 0, 0);
   padding: 1rem;
   margin: 1rem;
-  border-radius: 6px;
-  color: rgb(255, 255, 255);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-  font-size: 13px;
-  transition: max-height 0.3s ease, opacity 0.6s ease;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-/* Fade in */
-.image-container-inner.hovered .credit-text {
+/* Fade in text */
+.img-container.hovered .credit-container {
   max-height: 375px;
-  opacity: 0.8;
-  transition-delay: 0.3s;
+  opacity: 0.75;
+  transition-delay: 0.1s;
 }
 
-/* Instant fade out */
-.image-container-inner:not(.hovered) .credit-text {
-  max-height: 0;
+/* Instant fade out of text on non-hovered images */
+.img-container:not(.hovered) .credit-container {
+  max-height: 0px;
   opacity: 0;
   transition-delay: 0s;
 }
 
-
-.credit-box .credit {
-  font-size: 12px;
+.credit-textbox .credit {
+  font-size: 15px;
+  font-style: italic;
+  color: #d5d5d5;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.234);
+  padding: 0.2rem 0.5rem;
 }
 
 /* source */
-.credit-text a {
+.credit-textbox a {
   text-decoration: none;
   position: relative;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
-/* source */
-.credit-text a {
-  position: relative;
-  text-transform: capitalize;
-  text-decoration: none;
-  transition: 0.3s ease;
-  color: rgb(255, 255, 255);
-}
-
-/* Line deco for credit / source */
-.credit-text a::before {
+/* Line deco for credit. */
+.credit-textbox a::before ,
+.credit-textbox a:hover::before{
   content: "";
   position: absolute;
-  background: #000000;
-  top: -7px;
+  background: white;
+  top: 0px;
   left: 0;
   width: 0%;
-  height: 1px;
+  height: 2px;
   transition: all 1.6s ease;
 }
+/* No width deco. */
+.credit-textbox a::before {
+  width: 0%;
+  transition: all 1.2s ease-in;
+}
 
-/* Line deco for credit / source */
-.credit-text a:hover::before{
-  content: "";
-  position: absolute;
-  background: #ffffff;
-  top: -7px;
-  left: 0;
+/* Expand width on hover */
+.credit-textbox a:hover::before{
   width: 100%;
-  height: 1px;
-
   transition: all 0.3s ease-in;
 }
 
-
-
 /* RESPONSIVE */
-@media only screen and (max-width: 1371px) {
+@media only screen and (max-width: 485px) {
+  .img-container {
+    box-shadow: 0 0 .5rem .5rem black;
+  }
 
-}
-@media only screen and (max-width: 900px) {
-  
+  .credit-container {
+    font-size: 14px;
+    margin: 0;
+    padding: 0.5rem;
+  }
 }
