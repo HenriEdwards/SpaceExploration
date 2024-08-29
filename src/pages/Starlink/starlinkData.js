@@ -1,5 +1,5 @@
 const images = [
-  { src: '/assets/starlink/sl1.jpg', 
+  { src: '/assets/starlink/sl1.png', 
     alt: 'spacex-starlink', 
     credit: 'https://satellitemap.space', 
     desc: "Check out this awesome interactive map of the Starlink satellite constellation."},
