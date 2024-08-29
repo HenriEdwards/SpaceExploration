@@ -7,7 +7,7 @@ Web application dedicated to sharing information and imagery related to space sc
 React js, CSS
 
 ## Live Link
-[Link](https://65d1b84628293d285acb904f--voluble-piroshki-c475fd.netlify.app)
+[Link](https://spacelog.netlify.app)
 
 ## Features
 
