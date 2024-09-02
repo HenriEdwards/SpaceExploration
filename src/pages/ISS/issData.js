@@ -46,7 +46,7 @@ const images = [
   ]
                         
   const paragraphs = [
-    "he International Space Station (ISS) is a space-based laboratory that orbits Earth, enabling research in a microgravity environment. Continuously inhabited since 2000, the ISS supports scientific experiments that advance our understanding of space and Earth, making it a vital asset for global space exploration."
+    "The International Space Station (ISS) is a space-based laboratory that orbits Earth, enabling research in a microgravity environment. Continuously inhabited since 2000, the ISS supports scientific experiments that advance our understanding of space and Earth, making it a vital asset for global space exploration."
   ];
   
   const listItems = [
