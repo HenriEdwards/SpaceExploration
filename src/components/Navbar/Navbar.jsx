@@ -14,10 +14,10 @@ export default function Navbar() {
     <nav className="navbar">
       <ul className="navbar-container">
         <li><Link to="/">Landing</Link></li>
+        <li><Link to="/starlink">Starlink</Link></li>
+        <li><Link to="/starship">Starship</Link></li>
         <li><Link to="/iss">ISS</Link></li>
         <li><Link to="/voyager">Voyager</Link></li>
-        <li><Link to="/starship">Starship</Link></li>
-        <li><Link to="/starlink">Starlink</Link></li>
       </ul>
 
       {/* Mobile nav toggle */}
