@@ -32,10 +32,12 @@
   text-transform:capitalize;
   z-index: 2;
   font-weight: 300;
+  max-width: 600px;
 }
 
 .landing-container span.special-text{
   color: white;
+  font-size: 66px;
   font-style:normal;
   font-weight: 500;
 }
