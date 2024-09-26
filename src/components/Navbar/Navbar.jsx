@@ -13,11 +13,11 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <ul className="navbar-container">
-        <li><Link to="/">Landing</Link></li>
-        <li><Link to="/starlink">Starlink</Link></li>
-        <li><Link to="/starship">Starship</Link></li>
-        <li><Link to="/iss">ISS</Link></li>
-        <li><Link to="/voyager">Voyager</Link></li>
+        <li><Link to="/spacelog/">Landing</Link></li>
+        <li><Link to="/spacelog/starlink">Starlink</Link></li>
+        <li><Link to="/spacelog/starship">Starship</Link></li>
+        <li><Link to="/spacelog/iss">ISS</Link></li>
+        <li><Link to="/spacelog/voyager">Voyager</Link></li>
       </ul>
 
       {/* Mobile nav toggle */}
@@ -30,11 +30,11 @@ export default function Navbar() {
 
       {/* Mobile nav */}
       <ul className={`navbar-m-container ${isMenuOpen ? 'open' : ''}`}>
-        <li><Link to="/" onClick={toggleMenu}>Landing</Link></li>
-        <li><Link to="/iss" onClick={toggleMenu}>ISS</Link></li>
-        <li><Link to="/voyager" onClick={toggleMenu}>Voyager</Link></li>
-        <li><Link to="/starship" onClick={toggleMenu}>Starship</Link></li>
-        <li><Link to="/starlink" onClick={toggleMenu}>Starlink</Link></li>
+        <li><Link to="/spacelog/" onClick={toggleMenu}>Landing</Link></li>
+        <li><Link to="/spacelog/iss" onClick={toggleMenu}>ISS</Link></li>
+        <li><Link to="/spacelog/voyager" onClick={toggleMenu}>Voyager</Link></li>
+        <li><Link to="/spacelog/starship" onClick={toggleMenu}>Starship</Link></li>
+        <li><Link to="/spacelog/starlink" onClick={toggleMenu}>Starlink</Link></li>
       </ul>
     </nav>
   );

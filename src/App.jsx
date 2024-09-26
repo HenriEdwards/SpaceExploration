@@ -19,11 +19,11 @@ function App() {
       >
         <div className='route-section app-container'>
           <Routes location={location}>
-            <Route path="/landing" element={<Landing />} />
-            <Route path="/iss" element={<ISS />} />
-            <Route path="/voyager" element={<Voyager />} />
-            <Route path="/starship" element={<Starship />} />
-            <Route path="/starlink" element={<Starlink />} />
+            <Route path="/spacelog/" element={<Landing />} />
+            <Route path="/spacelog/iss" element={<ISS />} />
+            <Route path="/spacelog/voyager" element={<Voyager />} />
+            <Route path="/spacelog/starship" element={<Starship />} />
+            <Route path="/spacelog/starlink" element={<Starlink />} />
           </Routes>
         </div>
       </CSSTransition>
