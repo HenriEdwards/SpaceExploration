@@ -19,7 +19,7 @@ function App() {
       >
         <div className='route-section app-container'>
           <Routes location={location}>
-            <Route path="/" element={<Landing />} />
+            <Route path="/landing" element={<Landing />} />
             <Route path="/iss" element={<ISS />} />
             <Route path="/voyager" element={<Voyager />} />
             <Route path="/starship" element={<Starship />} />
